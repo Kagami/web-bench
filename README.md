@@ -8,7 +8,7 @@ and some others, see [Links](#links).
 ## Test methodology
 
 Each web server/framework was configured to gain maximum RPS on the test
-stand (see below). For example disabled kernel-poll in Erlang gave
+stand (see below). For example disabled kernel-poll in Erlang gives
 several KRPS. Your mileage may vary.
 
 Configurations with huge performance difference has their own benchmarks
@@ -76,7 +76,8 @@ https://httpd.apache.org/docs/2.2/programs/ab.html (don't bench for >50K RPS, it
 http://aosabook.org/en/posa/warp.html  
 http://haskell.cs.yale.edu/wp-content/uploads/2013/08/hask035-voellmy.pdf  
 http://mervine.net/performance-testing-with-httperf  
-https://www.mnot.net/blog/2011/05/18/http_benchmark_rules (Benchmarks from this repo misses half of rules… Well, it can't be helped.)
+https://www.mnot.net/blog/2011/05/18/http_benchmark_rules (Benchmarks from this repo misses half of the rules… Well, it can't be helped.)  
+http://www.cse.wustl.edu/ANCS/2007/slides/Bryan%20Veal%20ANCS%20Presentation.pdf
 
 ## Results
 
