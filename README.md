@@ -5,14 +5,16 @@ Done with high influence of TechEmpower's
 [FrameworkBenchmarks](https://github.com/TechEmpower/FrameworkBenchmarks)
 and some others, see [Links](#links).
 
-### Test methodology
+## Test methodology
 
 Each web server/framework was configured to gain maximum RPS on the test
 stand (see below). For example disabled kernel-poll in Erlang gave
 several KRPS. Your mileage may vary.
 
-Configurations with huge performance difference has their own benchmark
+Configurations with huge performance difference has their own benchmarks
 (e.g. `warp-threads` and `warp-processes`).
+
+## Benchmarking
 
 ### Prepare
 
@@ -52,7 +54,7 @@ $ make bench
 
 Results will be available inside the `logs` directory.
 
-### Links
+## Links
 
 **Similar benchmarks:**  
 http://www.techempower.com/benchmarks/  
@@ -76,7 +78,7 @@ http://haskell.cs.yale.edu/wp-content/uploads/2013/08/hask035-voellmy.pdf
 http://mervine.net/performance-testing-with-httperf  
 https://www.mnot.net/blog/2011/05/18/http_benchmark_rules (Benchmarks from this repo misses half of rules… Well, it can't be helped.)
 
-### Results
+## Results
 
 To get the most honest results you really should prepare and run all
 these benchmarks by yourself. And tune some of them if necessary.
@@ -111,6 +113,6 @@ I've recorded them anyway.
 
 **Software versions:**
 * Latest available in git master or in standart language's package manager
-at the moment of testing.
+at the moment of testing
 
 Check `logs` directory for resulting logs.
