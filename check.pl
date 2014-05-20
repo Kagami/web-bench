@@ -20,8 +20,7 @@ my $SYSCTL_OPTIONS = [
     'net.ipv4.conf.all.rp_filter' => ['==', 1],
     'net.ipv4.conf.default.rp_filter' => ['==', 1],
     'net.ipv4.ip_local_port_range' => ['==', "1024\t65535"],
-    # Should be compiled into the kernel.
-    # 'net.ipv4.tcp_congestion_control' => ['==', 'bic'],
+    'net.ipv4.tcp_congestion_control' => ['==', 'bic'],
     'net.ipv4.tcp_ecn' => ['==', 0],
     'net.ipv4.tcp_max_syn_backlog' => ['>=', 12000],
     'net.ipv4.tcp_max_tw_buckets' => ['>=', 2000000],
@@ -32,7 +31,7 @@ my $SYSCTL_OPTIONS = [
     'net.ipv4.tcp_timestamps' => ['==', 1],
     'net.ipv4.tcp_wmem' => ['==', "30000000\t30000000\t30000000"],
     'net.ipv4.tcp_tw_reuse' => ['==', 1],
-    'net.ipv4.tcp_fin_timeout', => ['<=', 30],
+    'net.ipv4.tcp_fin_timeout', => ['<=', 20],
 ];
 
 ###
