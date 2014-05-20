@@ -16,7 +16,7 @@ $ make install-deps
 You could run this and other steps only for single directory, for example:
 
 ```bash
-$ make nodejs/install-deps
+$ make gunicorn-sync/install-deps
 ```
 
 ### Compile benchmarks
@@ -98,5 +98,4 @@ I've recorded them anyway.
 * NodeJS 0.10.26
 * GHC 7.8.2
 
-**Logs:**  
 Check `logs` directory for resulting logs.
