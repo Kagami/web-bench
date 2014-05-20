@@ -72,7 +72,7 @@ To get the most honest results you really should prepare and run all
 these benchmarks by yourself. And tune some of them if necessary.
 
 For example while doing my own behchmarks I discover some strange "bugs"
-in others. For example:
+in others:
 * Warp's performance in
   [Round 9](http://www.techempower.com/benchmarks/#section=data-r9&hw=peak&test=json)
   of TechEmpower's benchmarks seems weird: it even slower than Python!
