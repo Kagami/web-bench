@@ -1,0 +1,5 @@
+/*.hi
+/*.o
+/warp-threads
+/cabal.sandbox.config
+/.cabal-sandbox/
