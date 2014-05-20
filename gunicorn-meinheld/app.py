@@ -1,6 +1,6 @@
 data = ['Hello, World!']
 response_headers = [
-    ('Content-type', 'text/plain'),
+    ('Content-Type', 'text/plain'),
     ('Content-Length', str(len(data[0])))
 ]
 

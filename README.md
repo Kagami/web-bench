@@ -64,7 +64,8 @@ https://httpd.apache.org/docs/2.2/programs/ab.html (don't bench for >50K RPS, it
 **Other:**  
 http://aosabook.org/en/posa/warp.html  
 http://haskell.cs.yale.edu/wp-content/uploads/2013/08/hask035-voellmy.pdf  
-http://mervine.net/performance-testing-with-httperf
+http://mervine.net/performance-testing-with-httperf  
+https://www.mnot.net/blog/2011/05/18/http_benchmark_rules (this benchmark misses half of this rules; well, it can't be helped)
 
 ### Results
 
@@ -86,7 +87,7 @@ yourself. Don't believe mine as well. But for curious one and as a memo
 I've recorded them anyway.
 
 **Test stand:**
-* Gentoo
+* Gentoo x86_64
 * Linux 3.13
 * Intel i7 3820 3.60 GHz (4 physical cores, 8 virtual cores with HT)
 * 32GB RAM
@@ -97,5 +98,6 @@ I've recorded them anyway.
 * Python 2.7.5
 * NodeJS 0.10.26
 * GHC 7.8.2
+* Erlang 17.0
 
 Check `logs` directory for resulting logs.

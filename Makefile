@@ -1,10 +1,10 @@
 SUBDIRS=$(dir $(wildcard */Makefile))
 TARGETS=install-deps build clean start stop kill
 SUBDIRS_TARGETS=$(foreach t,$(TARGETS),$(addsuffix $t,$(SUBDIRS)))
-BENCH_SUBDIRS=$(sort $(dir $(wildcard */app*)))
-BENCH_TARGETS=$(addsuffix bench,$(BENCH_SUBDIRS))
+BENCH_TARGETS=$(addsuffix bench,$(SUBDIRS))
+SLEEP_BENCH_TARGETS=$(addsuffix .sleep,$(BENCH_TARGETS))
 
-WEIGHTTP=weighttp/weighttp-master/build/default/weighttp
+WEIGHTTP=weighttp
 URL=http://127.0.0.1:8000/
 LOGS=logs
 
@@ -13,12 +13,10 @@ all: build
 check:
 	@./check.pl
 
-$(TARGETS): % : $(addsuffix %,$(SUBDIRS))
+$(TARGETS) : % : $(addsuffix %,$(SUBDIRS))
 
 $(SUBDIRS_TARGETS):
 	$(MAKE) -C $(@D) $(@F)
-
-bench: $(BENCH_TARGETS)
 
 $(BENCH_TARGETS):
 	mkdir -p $(LOGS)
@@ -39,6 +37,10 @@ $(BENCH_TARGETS):
 	# Stopping background app.
 	###
 	$(MAKE) -C $(@D) stop
+
+bench: $(SLEEP_BENCH_TARGETS)
+
+$(SLEEP_BENCH_TARGETS) : %.sleep : %
 	###
 	# Sleeping before next bench.
 	# All TIME_WAIT sockets should be closed.
