@@ -110,6 +110,7 @@ I've recorded them anyway.
 * NodeJS 0.10.26
 * GHC 7.8.2
 * Erlang 17.0 (+hipe +kpoll +smp)
+* Go 1.2
 
 **Software versions:**
 * Latest available in git master or in standart language's package manager
