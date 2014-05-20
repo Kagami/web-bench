@@ -1,7 +1,7 @@
 # Web benchmarks
 
-Simple echo benchmarks for some web servers and frameworks. Done with
-high influence from TechEmpower's
+Simple "hello world" benchmarks for some web servers and frameworks.
+Done with high influence of TechEmpower's
 [FrameworkBenchmarks](https://github.com/TechEmpower/FrameworkBenchmarks)
 and some others, see [Links](#links).
 
